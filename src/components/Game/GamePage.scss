@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.mainContainer {
+  display: grid;
+  @media (max-width: 768px) {
+    grid-template-columns: minmax(320px, 1fr);
+  }
+  grid-template-columns: minmax(320px, 2fr) minmax(min-content, 1fr);
+  justify-items: center;
+  background: #F5F5F7;
+  grid-template-areas:
+        "quiz" "reachedScore";
+}
+
+.quiz {
+  grid-area: quiz;
+  align-self: center;
+  grid-template-columns: subgrid;
+
+}
+
+.QuestionText {
+  font-family: Inter, sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 116%;
+  /* Black-100 */
+  color: #1C1C21;
+  padding: 0 360px 295px 80px;
+}
+
+.ButtonsSection {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-rows: repeat(2, minmax(min-content, 1fr));
+  grid-gap: 15px;
+  justify-items: center;
+  padding: 0 15px 0 20px;
+}
+
+.AnswerButton {
+  display: grid;
+  grid-template-columns: minmax(min-content, 350px);
+  grid-template-rows: minmax(min-content, 72px);
+  background: aquamarine;
+  align-items: center;
+  border: none;
+}
+
+.AnswerButton.disabled {
+  background: #1C1C21;
+}
+
+.AnswerButton.correct {
+  background: limegreen;
+}
+
+.AnswerButton.incorrect {
+  background: indianred;
+}
+
+.AnswerButton:hover {
+  background: #FF8B37;
+}
+
+//
+//.ButtonsSection:before {
+//  content: '';
+//  width: 20px;
+//  height: 20px;
+//  background: #F5F5F7;
+//  transform: rotate(45deg);
+//  position: absolute;
+//  border: 0 solid #F5F5F7;
+//  border-right-width: 3px;
+//  top: -12px;
+//  left: -13px;
+//}
+
+.reachedScore {
+  display: flex;
+  @media (max-width: 768px) {
+display: none
+  }
+  flex-direction: column-reverse;
+  text-align: center;
+  justify-self: stretch;
+  background: #FFFFFF;
+  grid-area: reachedScore;
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.scoreValue {
+  padding: 20px;
+}
+
+.scoreValue.active {
+  background: #FF8B37;
+}
+
+.scoreValue.passed {
+  background: darkgrey;
+}
