@@ -1,4 +1,3 @@
-
 let initialState = {
     questions: [
         {
@@ -6,10 +5,10 @@ let initialState = {
             score: 500,
             qDescription: 'In the UK, the abbreviation NHS stands for National what Service?',
             answerOptions: [
-                {answerText: 'Humanity', isCorrect: false, isSelected: false, aId: 1},
-                {answerText: 'Health', isCorrect: true, isSelected: false, aId: 2},
-                {answerText: 'Honour', isCorrect: false, isSelected: false, aId: 3},
-                {answerText: 'Household', isCorrect: false, isSelected: false, aId: 4}
+                {answerText: 'Humanity', isCorrect: false},
+                {answerText: 'Health', isCorrect: true},
+                {answerText: 'Honour', isCorrect: false},
+                {answerText: 'Household', isCorrect: false}
             ]
         },
 
@@ -18,10 +17,10 @@ let initialState = {
             score: 1000,
             qDescription: 'The hammer and sickle is one of the most recognisable symbols of which political ideology?',
             answerOptions: [
-                {answerText: 'Republicanism', isCorrect: false, isSelected: false, aId: 1},
-                {answerText: 'Communism', isCorrect: true, isSelected: false, aId: 2},
-                {answerText: 'Conservatism', isCorrect: false, isSelected: false, aId: 3},
-                {answerText: 'Liberalism', isCorrect: false, isSelected: false, aId: 4}
+                {answerText: 'Republicanism', isCorrect: false},
+                {answerText: 'Communism', isCorrect: true},
+                {answerText: 'Conservatism', isCorrect: false},
+                {answerText: 'Liberalism', isCorrect: false}
             ]
         },
 
@@ -30,10 +29,10 @@ let initialState = {
             score: 2000,
             qDescription: 'Which toys have been marketed with the phrase "Robots in Disguise"?',
             answerOptions: [
-                {answerText: 'Bratz Dolls', isCorrect: false, isSelected: false, aId: 1},
-                {answerText: 'Sylvanian Families', isCorrect: false, isSelected: false, aId: 2},
-                {answerText: 'Hatchimals', isCorrect: false, isSelected: false, aId: 3},
-                {answerText: 'Transformers', isCorrect: true, isSelected: false, aId: 4}
+                {answerText: 'Bratz Dolls', isCorrect: false},
+                {answerText: 'Sylvanian Families', isCorrect: false},
+                {answerText: 'Hatchimals', isCorrect: false},
+                {answerText: 'Transformers', isCorrect: true}
             ]
         },
 
@@ -42,10 +41,10 @@ let initialState = {
             score: 4000,
             qDescription: 'What does the word loquacious mean?',
             answerOptions: [
-                {answerText: 'Angry', isCorrect: false, isSelected: false, aId: 1},
-                {answerText: 'Chatty', isCorrect: true, isSelected: false, aId: 2},
-                {answerText: 'Beautiful', isCorrect: false, isSelected: false, aId: 3},
-                {answerText: 'Shy', isCorrect: false, isSelected: false, aId: 4}
+                {answerText: 'Angry', isCorrect: false},
+                {answerText: 'Chatty', isCorrect: true},
+                {answerText: 'Beautiful', isCorrect: false},
+                {answerText: 'Shy', isCorrect: false}
             ]
         },
 
@@ -54,10 +53,10 @@ let initialState = {
             score: 8000,
             qDescription: 'Obstetrics is a branch of medicine particularly concerned with what?',
             answerOptions: [
-                {answerText: 'Childbirth', isCorrect: true, isSelected: false, aId: 1},
-                {answerText: 'Broken bones', isCorrect: false, isSelected: false, aId: 2},
-                {answerText: 'Heart conditions', isCorrect: false, isSelected: false, aId: 3},
-                {answerText: 'Old age', isCorrect: false, isSelected: false, aId: 4}
+                {answerText: 'Childbirth', isCorrect: true},
+                {answerText: 'Broken bones', isCorrect: false},
+                {answerText: 'Heart conditions', isCorrect: false},
+                {answerText: 'Old age', isCorrect: false}
             ]
         },
 
@@ -66,10 +65,10 @@ let initialState = {
             score: 16000,
             qDescription: 'In Doctor Who, what was the signature look of the fourth Doctor, as portrayed by Tom Baker?',
             answerOptions: [
-                {answerText: 'Bow-tie, braces & tweed jacket', isCorrect: false, isSelected: false, aId: 1},
-                {answerText: 'Wide-brimmed hat & extra long scarf', isCorrect: true, isSelected: false, aId: 2},
-                {answerText: 'Pinstripe suit & trainers', isCorrect: false, isSelected: false, aId: 3},
-                {answerText: 'Cape, velvet jacket & frilly shirt', isCorrect: false, isSelected: false, aId: 4}
+                {answerText: 'Bow-tie, braces & tweed jacket', isCorrect: false},
+                {answerText: 'Wide-brimmed hat & extra long scarf', isCorrect: true},
+                {answerText: 'Pinstripe suit & trainers', isCorrect: false},
+                {answerText: 'Cape, velvet jacket & frilly shirt', isCorrect: false}
             ]
         },
 
@@ -78,10 +77,10 @@ let initialState = {
             score: 32000,
             qDescription: 'Which of these religious observances lasts for the shortest period of time during the calendar year?',
             answerOptions: [
-                {answerText: 'Ramadan', isCorrect: false, isSelected: false, aId: 1},
-                {answerText: 'Diwali', isCorrect: true, isSelected: false, aId: 2},
-                {answerText: 'Lent', isCorrect: false, isSelected: false, aId: 3},
-                {answerText: 'Hanukkah', isCorrect: false, isSelected: false, aId: 4}
+                {answerText: 'Ramadan', isCorrect: false},
+                {answerText: 'Diwali', isCorrect: true},
+                {answerText: 'Lent', isCorrect: false},
+                {answerText: 'Hanukkah', isCorrect: false}
             ]
         },
 
@@ -90,10 +89,10 @@ let initialState = {
             score: 64000,
             qDescription: 'At the closest point, which island group is only 50 miles south-east of the coast of Florida?',
             answerOptions: [
-                {answerText: 'Bahamas', isCorrect: true, isSelected: false, aId: 1},
-                {answerText: 'US Virgin Islands', isCorrect: false, isSelected: false, aId: 2},
-                {answerText: 'Turks and Caicos Islands', isCorrect: false, isSelected: false, aId: 3},
-                {answerText: 'Bermuda', isCorrect: false, isSelected: false, aId: 4}
+                {answerText: 'Bahamas', isCorrect: true},
+                {answerText: 'US Virgin Islands', isCorrect: false},
+                {answerText: 'Turks and Caicos Islands', isCorrect: false},
+                {answerText: 'Bermuda', isCorrect: false}
             ]
         },
 
@@ -102,10 +101,10 @@ let initialState = {
             score: 125000,
             qDescription: 'Construction of which of these famous landmarks was completed first?',
             answerOptions: [
-                {answerText: 'Empire State Building', isCorrect: false, isSelected: false, aId: 1},
-                {answerText: 'Royal Albert Hall', isCorrect: false, isSelected: false, aId: 2},
-                {answerText: 'Eiffel Tower', isCorrect: false, isSelected: false, aId: 3},
-                {answerText: 'Big Ben Clock Tower', isCorrect: true, isSelected: false, aId: 4}
+                {answerText: 'Empire State Building', isCorrect: false},
+                {answerText: 'Royal Albert Hall', isCorrect: false},
+                {answerText: 'Eiffel Tower', isCorrect: false},
+                {answerText: 'Big Ben Clock Tower', isCorrect: true}
             ]
         },
 
@@ -114,10 +113,10 @@ let initialState = {
             score: 250000,
             qDescription: 'Which of these cetaceans is classified as a "toothed whale"?',
             answerOptions: [
-                {answerText: 'Gray whale', isCorrect: false, isSelected: false, aId: 1},
-                {answerText: 'Minke whale', isCorrect: false, isSelected: false, aId: 2},
-                {answerText: 'Sperm whale', isCorrect: true, isSelected: false, aId: 3},
-                {answerText: 'Humpback whale', isCorrect: false, isSelected: false, aId: 4}
+                {answerText: 'Gray whale', isCorrect: false},
+                {answerText: 'Minke whale', isCorrect: false},
+                {answerText: 'Sperm whale', isCorrect: true},
+                {answerText: 'Humpback whale', isCorrect: false}
             ]
         },
 
@@ -126,10 +125,10 @@ let initialState = {
             score: 500000,
             qDescription: 'Who is the only British politician to have held all four "Great Offices of State" at some point during their career?',
             answerOptions: [
-                {answerText: 'David Lloyd George', isCorrect: false, isSelected: false, aId: 1},
-                {answerText: 'Harold Wilson', isCorrect: false, isSelected: false, aId: 2},
-                {answerText: 'James Callaghan', isCorrect: true, isSelected: false, aId: 3},
-                {answerText: 'John Major', isCorrect: false, isSelected: false, aId: 4}
+                {answerText: 'David Lloyd George', isCorrect: false},
+                {answerText: 'Harold Wilson', isCorrect: false},
+                {answerText: 'James Callaghan', isCorrect: true},
+                {answerText: 'John Major', isCorrect: false}
             ]
         },
 
@@ -138,10 +137,10 @@ let initialState = {
             score: 1000000,
             qDescription: 'In 1718, which pirate died in battle off the coast of what is now North Carolina?',
             answerOptions: [
-                {answerText: 'Calico Jack', isCorrect: false, isSelected: false, aId: 1},
-                {answerText: 'Blackbeard', isCorrect: true, isSelected: false, aId: 2},
-                {answerText: 'Bartholomew Roberts', isCorrect: false, isSelected: false, aId: 3},
-                {answerText: 'Captain Kidd', isCorrect: false, isSelected: false, aId: 4}
+                {answerText: 'Calico Jack', isCorrect: false},
+                {answerText: 'Blackbeard', isCorrect: true},
+                {answerText: 'Bartholomew Roberts', isCorrect: false},
+                {answerText: 'Captain Kidd', isCorrect: false}
             ]
         },
     ]
