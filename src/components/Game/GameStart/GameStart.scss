@@ -1,0 +1,63 @@
+.startWrapper {
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background: #FFF3EB;
+  background: linear-gradient(to bottom right, #ffffff 0%, #ffffff 50%, #fff3eb 50%, #fff3eb 100%);
+  height: 100vh;
+}
+
+.textStart {
+  @media (max-width: 768px) {
+    font-size: 10vw;
+    padding: 0 5vw 0 5vw;
+    text-align: center;
+  }
+  padding: 0 50px 65px 0;
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: 540;
+  font-size: 56px;
+  line-height: 116%;
+  grid-column: 2;
+  align-self: center;
+}
+
+.handStart {
+  @media (max-width: 768px) {
+    width: 100vw;
+  }
+  grid-column: 1;
+  justify-self: center;
+  align-self: center;
+}
+
+.btnStart {
+  @media (max-width: 768px) {
+    width: 90vw;
+    justify-self: center;
+    margin-top: 10vh;
+    height: 10vh;
+    font-size: 3vh;
+  }
+  grid-column: 2;
+  background: #FF8B37;
+  border-radius: 12px;
+  height: 64px;
+  width: 296px;
+  border: none;
+  font-style: normal;
+  font-weight: 500;
+  outline: none;
+  font-size: 20px;
+  line-height: 116%;
+  color: #FFFFFF;
+
+}
+
+.startSection {
+  display: grid;
+  align-self: center;
+}

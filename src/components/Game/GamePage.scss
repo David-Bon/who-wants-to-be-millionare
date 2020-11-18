@@ -3,6 +3,8 @@
   padding: 0;
 }
 
+
+
 .mainContainer {
   display: grid;
   @media (max-width: 768px) {
@@ -11,34 +13,46 @@
   grid-template-columns: minmax(320px, 2fr) minmax(min-content, 1fr);
   justify-items: center;
   background: #F5F5F7;
-  grid-template-areas:
-        "quiz" "reachedScore";
+  grid-template-areas: "quiz" "reachedScore";
 }
 
 .quiz {
   grid-area: quiz;
-  align-self: center;
-  grid-template-columns: subgrid;
 
+  grid-template-columns: subgrid;
+align-self: stretch;
 }
 
 .QuestionText {
+  @media (max-width: 470px) {
+    /* Mobile / Question? */
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
   font-family: Inter, sans-serif;
   font-size: 32px;
   font-weight: 600;
   line-height: 116%;
   /* Black-100 */
   color: #1C1C21;
-  padding: 0 360px 295px 80px;
+  padding: 15vh 10vh 15vh 12vh;
 }
 
 .ButtonsSection {
   display: grid;
+  @media (max-width: 470px) {
+    grid-auto-flow: row;
+  }
   grid-auto-flow: column;
   grid-template-rows: repeat(2, minmax(min-content, 1fr));
   grid-gap: 15px;
   justify-items: center;
-  padding: 0 15px 0 20px;
+  padding: 0 45px 45px 45px;
 }
 
 .AnswerButton {
@@ -66,24 +80,10 @@
   background: #FF8B37;
 }
 
-//
-//.ButtonsSection:before {
-//  content: '';
-//  width: 20px;
-//  height: 20px;
-//  background: #F5F5F7;
-//  transform: rotate(45deg);
-//  position: absolute;
-//  border: 0 solid #F5F5F7;
-//  border-right-width: 3px;
-//  top: -12px;
-//  left: -13px;
-//}
-
 .reachedScore {
   display: flex;
-  @media (max-width: 768px) {
-display: none
+  @media  (max-width: 768px) {
+    display: none
   }
   flex-direction: column-reverse;
   text-align: center;
@@ -92,6 +92,7 @@ display: none
   grid-area: reachedScore;
   grid-column: 2;
   grid-row: 1;
+
 }
 
 .scoreValue {

@@ -1,0 +1,16 @@
+.endWrapper {
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background: #F5F5F7;
+  height: 100vh;
+}
+.tScore {
+  font-family: Inter, sans-serif;
+  font-weight: 540;
+  font-size: 22px;
+  line-height: 116%;
+display: block;
+}
