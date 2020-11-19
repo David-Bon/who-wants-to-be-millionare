@@ -3,44 +3,37 @@
   padding: 0;
 }
 
-
-
 .mainContainer {
   display: grid;
   @media (max-width: 768px) {
     grid-template-columns: minmax(320px, 1fr);
   }
-  grid-template-columns: minmax(320px, 2fr) minmax(min-content, 1fr);
-  justify-items: center;
+  grid-template-columns: minmax(320px, 2fr) minmax(320px, 1fr);
   background: #F5F5F7;
   grid-template-areas: "quiz" "reachedScore";
 }
 
 .quiz {
   grid-area: quiz;
-
-  grid-template-columns: subgrid;
-align-self: stretch;
+  &.mobile-active {
+    display: none;
+  }
 }
 
 .QuestionText {
   @media (max-width: 470px) {
-    /* Mobile / Question? */
     font-family: Inter, sans-serif;
-    font-style: normal;
-    font-weight: 600;
     font-size: 21px;
     display: flex;
-    align-items: center;
     text-align: center;
   }
+  height: 72px;
   font-family: Inter, sans-serif;
-  font-size: 32px;
+  font-size: 38px;
   font-weight: 600;
   line-height: 116%;
-  /* Black-100 */
   color: #1C1C21;
-  padding: 15vh 10vh 15vh 12vh;
+  padding: 15vh 10vh 18vh 12vh;
 }
 
 .ButtonsSection {
@@ -52,37 +45,33 @@ align-self: stretch;
   grid-template-rows: repeat(2, minmax(min-content, 1fr));
   grid-gap: 15px;
   justify-items: center;
-  padding: 0 45px 45px 45px;
+  padding: 125px 45px 45px 45px;
 }
 
 .AnswerButton {
   display: grid;
   grid-template-columns: minmax(min-content, 350px);
   grid-template-rows: minmax(min-content, 72px);
-  background: aquamarine;
+  background: #FFFFFF;
   align-items: center;
   border: none;
-}
-
-.AnswerButton.disabled {
-  background: #1C1C21;
-}
-
-.AnswerButton.correct {
-  background: limegreen;
-}
-
-.AnswerButton.incorrect {
-  background: indianred;
-}
-
-.AnswerButton:hover {
-  background: #FF8B37;
+  &.disabled {
+    background: #1C1C21;
+  }
+  &.correct {
+    background: #47D867;
+  }
+  &.incorrect {
+    background: #EC6259;
+  }
+  &:hover {
+    background: #FFAC70;
+  }
 }
 
 .reachedScore {
   display: flex;
-  @media  (max-width: 768px) {
+  @media (max-width: 768px) {
     display: none
   }
   flex-direction: column-reverse;
@@ -92,17 +81,77 @@ align-self: stretch;
   grid-area: reachedScore;
   grid-column: 2;
   grid-row: 1;
-
+  &.mobile-active {
+    display: flex;
+    grid-column: 1;
+  }
 }
 
 .scoreValue {
   padding: 20px;
+  &.active {
+    background: #FF8B37;
+  }
+  &.passed {
+    background: darkgrey;
+  }
 }
 
-.scoreValue.active {
-  background: #FF8B37;
+.menu-icon-wrapper {
+  display: none;
+  @media (max-width: 768px) {
+    display: flex;
+    position: absolute;
+    top: 35px;
+    right: 15px;
+  }
+  width: 30px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
 }
 
-.scoreValue.passed {
-  background: darkgrey;
+.menu-icon {
+  position: relative;
+  width: 30px;
+  height: 5px;
+  border-radius: 5px;
+  background-color: #1C1C21;
+  transition: background-color 0.2s ease-in 0.2s;
+  &:before {
+    position: absolute;
+    left: 0;
+    top: -10px;
+    content: '';
+    width: 30px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: #1C1C21;
+    transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+  }
+  &:after {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    content: '';
+    width: 30px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: #1C1C21;
+    transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+  }
+  &.menu-icon-active {
+    background-color: transparent;
+    transition: background-color 0.2s ease-in 0.2s;
+  }
+  &.menu-icon-active::before {
+    transform: rotate(45deg);
+    top: 0;
+    transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+  }
+  &.menu-icon-active::after {
+    transform: rotate(-45deg);
+    top: 0;
+    transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+  }
 }

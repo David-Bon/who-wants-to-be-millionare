@@ -8,7 +8,7 @@ let initialState = {
                 {answerText: 'Humanity', isCorrect: false},
                 {answerText: 'Health', isCorrect: true},
                 {answerText: 'Honour', isCorrect: false},
-                {answerText: 'Household', isCorrect: false}
+                {answerText: 'Household', isCorrect: false},
             ]
         },
 
@@ -140,7 +140,9 @@ let initialState = {
                 {answerText: 'Calico Jack', isCorrect: false},
                 {answerText: 'Blackbeard', isCorrect: true},
                 {answerText: 'Bartholomew Roberts', isCorrect: false},
-                {answerText: 'Captain Kidd', isCorrect: false}
+                {answerText: 'Captain Kidd', isCorrect: false},
+                {answerText: 'Joe Strawberry', isCorrect: false},
+                {answerText: 'Harrison Rottenberg', isCorrect: false}
             ]
         },
     ]

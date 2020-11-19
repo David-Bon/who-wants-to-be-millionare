@@ -3,10 +3,11 @@ import hand from "../../../assets/hand1.png"
 import "./GameEnd.scss"
 import "../GameStart/GameStart.scss"
 
-const GameEnd = ({totalScore, setGameIsEnd, setCurrentQuestion}) => {
+const GameEnd = ({totalScore, setGameIsEnd, setCurrentQuestion, setTotalScore}) => {
     const handleRestartButton = () => {
         setGameIsEnd(false)
         setCurrentQuestion(0)
+        setTotalScore(0)
     }
 
     return (
